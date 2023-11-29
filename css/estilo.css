@@ -15,16 +15,7 @@ body {
     
 }
 
-/* header {
-    display: flex;
-    z-index: 2;
-    justify-content: space-evenly;
-    background-color: #6876ce;
-    align-items: center;
-    padding: 10px 10%;
-    position: sticky;
-    top: 0;
-} */
+
 
 footer{
     
@@ -118,12 +109,11 @@ main h2{
 
 .contenedorQS{
     border: #6876ce 2px solid;
-    width: 800px;
-    height: 190px;
     border-radius: 14px;
     margin: auto;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -131,19 +121,30 @@ main h2{
     text-align: center;
 }
 
-.imagenesQS {
+.equipo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 7px;
 }
 
 .personas {
-    margin: 100px 80px 80px 80px;
+    margin: 100px 100px 100px 100px;
+}
+
+.todosLosPremios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .premios {
-    margin: 80px 80px 100px 80px;
-    width: 1000px;
+    margin: 100px 100px 100px 100px;
+    
 }
 
 
@@ -184,20 +185,19 @@ main h2{
 
 .contenedorEstudiaConNosotros {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
+    
 }
+
+
 
 
 .contenedorEstudiaConNosotros img{
-
-    padding: 20px;
-}
-
-.contenedorEstudiaConNosotros h3{
-
+    margin-top: 70px;
+    margin-bottom: 70px;
     cursor: pointer;
 }
 
@@ -261,28 +261,32 @@ input, textarea {
 }
 
 
-.contacto1 {
-    width: 120px;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
-.contacto2 {
-    width: 190px;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+.buttons {
+    min-width: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 90px;
+  }
+  
+  .buttons i {
+    text-decoration: none;
+    font-size: 4vw; 
+    width: 10vw; 
+    height: 10vw;
+    line-height: 10vw;
+    text-align: center;
+    background: #6876ce;
+    color: #fdf3e5;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons i:hover {
+    transform: scale(1.2);
+  }
+ 
 
-.contacto3 {
-    width: 100px;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-
-
-/* RESPONSIVE CON MEDIA QUERIES */
+/* la idea es asociar links de las redes sociales a los botones */
 
